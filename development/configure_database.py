@@ -5,7 +5,8 @@ cur = conn.cursor()
 
 cur.execute('''
 CREATE TABLE Units (
-    unit_id INTEGER PRIMARY KEY,
+    unit_id SERIAL PRIMARY KEY,
+    unit_number INTEGER,
     unit_extended_name VARCHAR(255),
     unit_shortened_name VARCHAR(255),
     unit_type VARCHAR(255),
